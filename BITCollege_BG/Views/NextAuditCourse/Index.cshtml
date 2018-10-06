@@ -1,0 +1,22 @@
+﻿@model BITCollege_BG.Models.NextAuditCourse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>NextAuditCourse</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NextAvailableNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NextAvailableNumber)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.NextAuditCourseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

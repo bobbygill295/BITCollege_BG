@@ -1,0 +1,46 @@
+﻿@model BITCollege_BG.Models.RegularState
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>RegularState</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LowerLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LowerLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UpperLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UpperLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TuitionRateFactor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TuitionRateFactor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

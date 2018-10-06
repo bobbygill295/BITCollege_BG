@@ -1,0 +1,57 @@
+﻿@model BITCollege_BG.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Registration</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RegistrationNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RegistrationNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Student.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Student.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Course.CourseNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Course.CourseNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RegistrationDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RegistrationDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Grade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Grade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RegistrationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,43 @@
+﻿@model BITCollege_BG.Models.ProbationState
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ProbationState</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LowerLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LowerLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UpperLimit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UpperLimit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TuitionRateFactor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TuitionRateFactor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.GPAStateId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

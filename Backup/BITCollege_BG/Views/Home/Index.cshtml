@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+<h3>This System will:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Calculate GPA</h5>
+        Gpa is calculated using all completed courses in which grades have been applied along with credit hour information
+    </li>
+
+    <li class="two">
+        <h5>Register for Courses</h5>
+        Allows for individual course registrations to take place 
+    </li>
+
+    <li class="three">
+        <h5>Determine Current State of Student's GPA</h5>
+        Determines the state of a student's gpa
+    </li>
+</ol>

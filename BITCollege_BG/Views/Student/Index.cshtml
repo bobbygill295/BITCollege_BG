@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BITCollege_BG.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProgramAcronym)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPAState.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutstandingFees)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProgramAcronym)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPAState.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutstandingFees)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StudentID })
+        </td>
+    </tr>
+}
+
+</table>

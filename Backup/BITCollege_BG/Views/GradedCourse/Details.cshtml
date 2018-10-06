@@ -1,0 +1,85 @@
+﻿@model BITCollege_BG.Models.GradedCourse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>GradedCourse</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AssignmnetWeight)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AssignmnetWeight)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MidtermWeight)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MidtermWeight)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FinalWeight)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FinalWeight)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Program.ProgramAcronym)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Program.ProgramAcronym)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CourseNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CourseNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreditHours)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreditHours)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TuitionAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TuitionAmount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CourseType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CourseType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CourseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

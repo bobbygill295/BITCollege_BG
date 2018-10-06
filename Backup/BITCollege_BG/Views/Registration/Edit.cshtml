@@ -1,0 +1,75 @@
+﻿@model BITCollege_BG.Models.Registration
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Registration</legend>
+
+        @Html.HiddenFor(model => model.RegistrationId)
+
+     
+        <div class="editor-field">
+            @Html.HiddenFor(model => model.RegistrationNumber)
+            @Html.ValidationMessageFor(model => model.RegistrationNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StudentId, "Student")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("StudentId", String.Empty)
+            @Html.ValidationMessageFor(model => model.StudentId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CourseId, "Course")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CourseId", String.Empty)
+            @Html.ValidationMessageFor(model => model.CourseId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RegistrationDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RegistrationDate)
+            @Html.ValidationMessageFor(model => model.RegistrationDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Grade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Grade)
+            @Html.ValidationMessageFor(model => model.Grade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Notes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Notes)
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

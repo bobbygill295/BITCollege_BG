@@ -1,0 +1,29 @@
+﻿@model BITCollege_BG.Models.StudentCard
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>StudentCard</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CardNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CardNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Student.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Student.FirstName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.StudentCardId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
