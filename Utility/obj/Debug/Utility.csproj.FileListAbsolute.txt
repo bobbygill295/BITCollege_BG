@@ -52,3 +52,7 @@ C:\Users\bobby\Desktop\VM\Visual Studio 2010\Projects\BITCollege_BG\Utility\bin\
 C:\Users\bobby\Desktop\VM\Visual Studio 2010\Projects\BITCollege_BG\Utility\obj\Debug\Utility.dll
 C:\Users\bobby\Desktop\VM\Visual Studio 2010\Projects\BITCollege_BG\Utility\obj\Debug\Utility.pdb
 C:\Users\bobby\Desktop\VM\Visual Studio 2010\Projects\BITCollege_BG\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+C:\code\BITCollege_BG\Utility\bin\Debug\Utility.dll
+C:\code\BITCollege_BG\Utility\bin\Debug\Utility.pdb
+C:\code\BITCollege_BG\Utility\obj\Debug\Utility.dll
+C:\code\BITCollege_BG\Utility\obj\Debug\Utility.pdb
