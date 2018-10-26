@@ -502,6 +502,7 @@ namespace BITCollege_BG.Models
 
         public Registration()
         {
+           
         }
 
         public void setNextRegistrationNumber()

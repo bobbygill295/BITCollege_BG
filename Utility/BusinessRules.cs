@@ -35,6 +35,32 @@ namespace Utility
     public static class BusinessRules
     {
 
+        public static string registerError(int errorCode)
+        {
+            string errorMessage = "";
+
+
+            if (errorCode == -100)
+            {
+                errorMessage = "Student cannot register for a course in which there is already an ungraded registration.";
+            }
+            else if (errorCode == -200)
+            {
+                errorMessage = "Student has exceeded maximum attempts on mastery course.";
+            }
+            else if (errorCode == -300)
+            {
+                errorMessage = "An error has occured while updating the registration.";
+            }
+            else
+            {
+                errorMessage = "Unknown error.";
+            }
+
+
+            return errorMessage;
+        }
+
         public static string RemoveTrailer(string className, string trailer)
         {
            int index = className.IndexOf(trailer);

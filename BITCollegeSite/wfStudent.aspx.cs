@@ -11,6 +11,7 @@ public partial class wfStudent : Page
         //redirect to login page if user
         if (!User.Identity.IsAuthenticated)
         {
+            Response.Redirect("~/Account/Login.aspx");
         }
 
         if (!IsPostBack)
@@ -18,7 +19,10 @@ public partial class wfStudent : Page
             long inputNumber = 10010800;
 
             //check that user is a valid number
-
+            com.dataaccess.www.NumberConversion externalRefrence = new com.dataaccess.www.NumberConversion();
+            string returnValue = externalRefrence.NumberToWords((ulong)DateTime.Now.Ticks);
+            lblResults.Visible = true;
+            lblResults.Text = "Number of clock ticks today: " +returnValue;
             try
             {
                 var student = db.Students.FirstOrDefault(x => x.StudentNumber == inputNumber);
@@ -47,5 +51,10 @@ public partial class wfStudent : Page
     {
         Session["courseNumber"] = gvCourses.SelectedRow.Cells[1].Text;
         Server.Transfer("wfDrop.aspx");
+    }
+
+    protected void btnRegister_Click(object sender, EventArgs e)
+    {
+        Server.Transfer("wfRegister.aspx");
     }
 }

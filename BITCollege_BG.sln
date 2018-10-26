@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{1DFB919A-6DD3-4F37-A1C4-5DA42400C74D}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BITCollegeSite", "BITCollegeSite\", "{237A4F2C-BD69-4597-91E7-845616CFD139}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BITCollegeSite(5)", "BITCollegeSite\", "{237A4F2C-BD69-4597-91E7-845616CFD139}"
 	ProjectSection(WebsiteProperties) = preProject
-		Frontpage = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{1dfb919a-6dd3-4f37-a1c4-5da42400c74d}|Utility.dll;{9C3753DE-FA12-41DF-8428-3FA397AEEE82}|BITCollege_BG.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/BITCollegeSite"
@@ -23,10 +24,37 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BITCollegeSite", "BITColleg
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "31621"
+		SlnRelativePath = "BITCollegeSite\"
 		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{86F0DD98-9807-4ADA-8D83-FAFFC67571EC} = {86F0DD98-9807-4ADA-8D83-FAFFC67571EC}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BITCollege_BG", "BITCollege_BG\BITCollege_BG.csproj", "{9C3753DE-FA12-41DF-8428-3FA397AEEE82}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BITCollegeService(1)", "..\..\Users\bobby\Documents\Visual Studio 2015\WebSites\BITCollegeService\", "{86F0DD98-9807-4ADA-8D83-FAFFC67571EC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{9c3753de-fa12-41df-8428-3fa397aeee82}|BITCollege_BG.dll;{1DFB919A-6DD3-4F37-A1C4-5DA42400C74D}|Utility.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3029"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Users\bobby\Documents\Visual Studio 2015\WebSites\BITCollegeService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3029\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3029"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Users\bobby\Documents\Visual Studio 2015\WebSites\BITCollegeService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3029\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3393"
+		SlnRelativePath = "..\..\Users\bobby\Documents\Visual Studio 2015\WebSites\BITCollegeService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +74,10 @@ Global
 		{9C3753DE-FA12-41DF-8428-3FA397AEEE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C3753DE-FA12-41DF-8428-3FA397AEEE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C3753DE-FA12-41DF-8428-3FA397AEEE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F0DD98-9807-4ADA-8D83-FAFFC67571EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F0DD98-9807-4ADA-8D83-FAFFC67571EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F0DD98-9807-4ADA-8D83-FAFFC67571EC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F0DD98-9807-4ADA-8D83-FAFFC67571EC}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

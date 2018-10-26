@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="58a77149-f914-49ea-b89c-f9e60e162035" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3393/CollegeRegistration.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CollegeRegistration.wsdl" MetadataType="Wsdl" ID="f5abef18-98f3-4db0-9f4c-a005ed66b99f" SourceId="1" SourceUrl="http://localhost:3393/CollegeRegistration.svc?wsdl" />
+    <MetadataFile FileName="CollegeRegistration.xsd" MetadataType="Schema" ID="b11cf068-7c67-4051-85ac-29558cd45301" SourceId="1" SourceUrl="http://localhost:3393/CollegeRegistration.svc?xsd=xsd1" />
+    <MetadataFile FileName="CollegeRegistration.disco" MetadataType="Disco" ID="6d213c9f-1c0e-45ca-81a8-e43ef3c621fc" SourceId="1" SourceUrl="http://localhost:3393/CollegeRegistration.svc?disco" />
+    <MetadataFile FileName="CollegeRegistration1.xsd" MetadataType="Schema" ID="6e1e53ba-570b-4836-94e4-92a0d9ddbfe5" SourceId="1" SourceUrl="http://localhost:3393/CollegeRegistration.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
